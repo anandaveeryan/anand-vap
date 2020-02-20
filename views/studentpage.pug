@@ -1,0 +1,122 @@
+doctype html
+html 
+    head
+        style.
+            body{
+                text-align:center;
+                background-color: lightblue;
+            }
+            input[type=text],select{
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=password]{
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+            #first{
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                width: 400px;
+                height: 250px;
+                display: inline-block;
+                margin-top: 10%;
+            }
+        script(src='https://code.jquery.com/jquery-1.12.4.min.js')
+        script.
+            $(document).ready(function(){
+                $("#DatabaseManagementSystems").hide();
+                $("#ProgramminginJava").hide();
+                $("#DataStructuresandAlgorithms").hide();
+                $("#DataMiningTechniques").hide();
+                $("#MachineLearning").hide();
+                $("#NaturalLanguageProcessing").hide();
+            });
+            $(function() {
+                $('#courseselected').change(function(){
+                    option = $(this).find('option:selected').attr('value');
+                    $('div:not(#option)').hide();
+                    $('#first').show();
+                    $('#' + option).show();
+                });
+            });
+    body
+        include includes/navigation.pug
+        div(id="first")
+            form(action="/registercourse",method="post")
+                -const courses = JSON.parse(course);
+                -const faculties1 = JSON.parse(fact1);
+                -const faculties2 = JSON.parse(fact2);
+                -const faculties3 = JSON.parse(fact3);
+                -const faculties4 = JSON.parse(fact4);
+                -const faculties5 = JSON.parse(fact5);
+                -const faculties6 = JSON.parse(fact6);
+                -const faculties7 = JSON.parse(fact7);
+                input(type="hidden",name="studname",value=studentname)
+                select(id="courseselected" name="courseselected")
+                    for i,j in courses
+                        option(value=i) #{j}
+                div(id="ProblemSolvingandObjectOrientedProgramming")
+                    select(name="facultytselected")
+                        for i in faculties1
+                            option(value=i) #{i}
+                div(id="DatabaseManagementSystems")
+                    select(name="factselected")
+                        for i in faculties2
+                            option(value=i) #{i}
+                div(id="ProgramminginJava")
+                    select(name="factselected")
+                        for i in faculties3
+                            option(value=i) #{i}
+                div(id="DataStructuresandAlgorithms")
+                    select(name="factselected")
+                        for i in faculties4
+                            option(value=i) #{i}
+                div(id="DataMiningTechniques")
+                    select(name="factselected")
+                        for i in faculties5
+                            option(value=i) #{i}
+                div(id="MachineLearning")
+                    select(name="factselected")
+                        for i in faculties6
+                            option(value=i) #{i}
+                div(id="NaturalLanguageProcessing")
+                    select(name="factselected")
+                        for i in faculties7
+                            option(value=i) #{i}
+                input(type='submit', value='Submit')
+            h4 #{message}

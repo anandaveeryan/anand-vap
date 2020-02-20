@@ -1,0 +1,34 @@
+{
+  "anandaveeryan": {
+    "password": "anand",
+    "courses": [],
+    "subjects": 0,
+    "loggedin": false
+  },
+  "anand": {
+    "password": "aa",
+    "courses": [
+      "DatabaseManagementSystems",
+      "ProgramminginJava",
+      "DataMiningTechniques",
+      "MachineLearning",
+      "NaturalLanguageProcessing"
+    ],
+    "subjects": 0,
+    "loggedin": false
+  },
+  "a": {
+    "password": "a",
+    "courses": [
+      "ProblemSolvingandObjectOrientedProgramming",
+      "DatabaseManagementSystems",
+      "ProgramminginJava",
+      "DataStructuresandAlgorithms",
+      "DataMiningTechniques",
+      "MachineLearning",
+      "NaturalLanguageProcessing"
+    ],
+    "subjects": 0,
+    "loggedin": false
+  }
+}

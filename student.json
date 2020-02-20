@@ -1,0 +1,51 @@
+{
+  "anand": {
+    "password": "anand",
+    "courses": [
+      null,
+      null,
+      {
+        "DataMiningTechniques": "a"
+      },
+      {
+        "ProblemSolvingandObjectOrientedProgramming": "anand"
+      },
+      {
+        "DatabaseManagementSystems": "anand"
+      },
+      {
+        "DataStructuresandAlgorithms": "anand"
+      }
+    ],
+    "credits": 0,
+    "loggedin": false
+  },
+  "anandaveeryan": {
+    "password": "abcd",
+    "courses": [],
+    "credits": 0,
+    "loggedin": false
+  },
+  "test": {
+    "password": "test",
+    "courses": [],
+    "credits": 0,
+    "loggedin": false
+  },
+  "Anandaveeryan": {
+    "password": "Anand$1999",
+    "courses": [
+      null,
+      null,
+      null,
+      {
+        "NaturalLanguageProcessing": "anand"
+      },
+      {
+        "DataMiningTechniques": "anand"
+      }
+    ],
+    "credits": 0,
+    "loggedin": false
+  }
+}
