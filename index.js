@@ -24,7 +24,6 @@ course = []
 for (c in courseData){
     course.push(courseData[c].replace(/\s/g,''))
 }
-console.log(course)
 course1 = {}
 for (c in courseData){
     course1[courseData[c]] = courseData[c].replace(/\s/g,'')
@@ -49,7 +48,6 @@ for(j in course){
     }
     courselist.push(arr);
 }
-console.log(courselist)
 
 var facts1 = JSON.stringify(courselist[0]);
 var facts2 = JSON.stringify(courselist[1]);
