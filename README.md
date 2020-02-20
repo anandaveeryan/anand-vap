@@ -7,15 +7,14 @@ Courses will be listed out by the authority. Faculties can select subjects in wh
 
 # Concepts used to create this project
 Files are used to store the data  
-Callbacks are used in reading and writing the files  
-Code is divided into several module and imported in the main program   
-Modules exporting  
+**Callbacks** are used in reading and writing the files     
+**Modules exporting and importing** 
 Inbuilt functions are used like fs and path  
 JSON object to store data and arrays also used  
-Express for server  
+**Express** for server  
 Handled GET,POST requests  
-used Closure concept  
-used Promises for file reading  
-used Pug templates for designing  
+used **Closure** concept  
+used **Promises** for file reading  
+used **Pug** templates for designing  
 npm modules used -- loadash, html-pdf, express, nodemon, pug, body-parser  
 
